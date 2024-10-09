@@ -1,0 +1,155 @@
+/* General styles */
+
+
+.buyer-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 30px;
+  color: #34495e;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ddd;
+  padding-top: 60px;
+}
+
+.buyer-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  height: auto;
+}
+
+/* Buyer card styles */
+.buyer-card {
+  background-color: #ffea00;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 500px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 20px;
+}
+
+.buyer-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Details table styles */
+.details-table {
+  width: 100%;
+  border-collapse: collapse;
+  
+  font-size: 14px;
+}
+
+.details-table th,
+.details-table td {
+  padding: 12px 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.details-table th {
+  font-weight: bold;
+  background-color: #f0f2f5;
+  color: #34495e;
+  width: 200px;
+}
+
+.details-table td {
+  color: #555;
+  width: 200px;
+  background-color: #fafafa;
+}
+
+/* .details-table tr:nth-child(odd) {
+  background-color: #fafafa;
+} */
+
+/* More button styles */
+.more {
+  background:linear-gradient(to right,#ffa200,#ffdd00 );
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.morehide{
+  display: none;
+}
+
+.search {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.search input{
+  width: 300px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color:#ffea00be;
+  color: black;
+  border: none;
+ 
+}
+
+.search button{
+ padding: 10px 20px;
+ background-color:#ffa200;
+ border: none;
+ border-radius: 20px;
+}
+
+.search button:hover{
+  background-color:black;
+  color: white;
+  cursor: pointer;
+}
+
+/* Media query for responsive design */
+
+@media (max-width: 1200px) {
+  .buyer-card {
+    width: 60%;
+    max-width: 100%;
+  }
+}
+
+
+.loader{
+  height:100vh ;
+  width: 100%;
+  background-image: url(../Assets/loader.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #FFCA03;
+ 
+}
+
+
+@media (max-width: 768px) {
+  .buyer-card {
+    width: 60%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 488px) {
+  .buyer-card {
+    width: 100%;
+    max-width: 100%;
+  }
+}
