@@ -123,7 +123,26 @@ const Sellercontrol = () => {
               <label>Retailer</label>
               <input type="checkbox" checked={data.role.retailer} readOnly />
 
-             
+              <label>Business Sell Outs</label>
+              <input type="checkbox" checked={data.role.BusinessSellOuts} readOnly />
+
+              <label>Invest Partners</label>
+              <input type="checkbox" checked={data.role.InvestPartners} readOnly />
+
+              <label>Share Partners</label>
+              <input type="checkbox" checked={data.role.SharePartners} readOnly />
+
+              <label>Working Partners</label>
+              <input type="checkbox" checked={data.role.WorkingPartners} readOnly />
+
+              <label>Share Sellers</label>
+              <input type="checkbox" checked={data.role.ShareSellers} readOnly />
+
+              <label>Seed Funders </label>
+              <input type="checkbox" checked={data.role.SeedFunders } readOnly />
+
+              <label>Venture Capitals</label>
+              <input type="checkbox" checked={data.role.VentureCapitals} readOnly />
 
               <label>Investment Range</label>
               Min Value{' '}

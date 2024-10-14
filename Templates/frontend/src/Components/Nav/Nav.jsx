@@ -41,7 +41,7 @@ const Nav = () => {
               duration={500}
               activeClass="txtcolor"
             >
-              FindYourMatch
+              FindYourNeeds
             </ScrollLink>
           
         </li>

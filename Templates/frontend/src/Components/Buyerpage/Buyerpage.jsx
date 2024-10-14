@@ -53,7 +53,7 @@ const Buyerpage = () => {
 
             <Nav2 />
 
-            <h1 className="buyer-title">Buyers</h1>
+            <h1 className="buyer-title">Business Seeker</h1>
               <Search />
 
             {err ? (
@@ -66,7 +66,7 @@ const Buyerpage = () => {
                 {buyerdata.map((data) => (
                     <div className="buyer-card" key={data._id}>
                         
-                            <table className="details-table">
+                            <table className="details-tables">
                                 <tbody>
                                 <tr>
                                     <th>Title</th>
@@ -74,8 +74,13 @@ const Buyerpage = () => {
                                 </tr>
                                 
                                 <tr>
-                                    <th>Industry/Category</th>
-                                    <td>{data.industry} / {data.category}</td>
+                                    <th>Industry</th>
+                                    <td>{data.industry}</td>
+                                </tr>
+
+                                <tr>
+                                    <th>Category</th>
+                                    <td>{data.category}</td>
                                 </tr>
                                 <tr>
                                 <th>Role Looking for</th>
@@ -90,6 +95,14 @@ const Buyerpage = () => {
                                           if (data.role.distributor) roles.push("Distributor");
                                           if (data.role.agency) roles.push("Agency");
                                           if (data.role.retailer) roles.push("Retailer");
+                                          if (data.role.BusinessBuyOuts) roles.push("  Business Buy Outs");
+                                          if (data.role.InvestPartners) roles.push("InvestPartners");
+                                          if (data.role.SharePartners) roles.push("SharePartners");
+                                          if (data.role.WorkingPartners) roles.push("WorkingPartners");
+                                          if (data.role.ShareBuyers) roles.push("Share Buyers");
+                                          if (data.role.SeedFunders ) roles.push("Seed Funders ");
+                                          if (data.role.VentureCapitals) roles.push("Venture Capitals");
+                                        
 
                                           return roles.length > 0 ? roles.join(", ") : "No Roles Selected";
                                         })()}
@@ -146,10 +159,7 @@ const Buyerpage = () => {
                                   <th>Start Duration:</th>
                                   <td>{data.duration}</td>
                                 </tr>
-                                <tr>
-                                  <th>Phone:</th>
-                                  <td>{data.numberhide ? "You need to pay" : data.phone}</td>
-                                </tr>
+                                
                               </tbody>
                             </table>
                         )}

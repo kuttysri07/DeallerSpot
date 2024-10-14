@@ -15,8 +15,8 @@ const Contact = () => {
           <img src={location} alt="Visit Us" />
         </div>
         <h3>VISIT US</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p className="contact-detail">2 Elizabeth, London, UK</p>
+       
+        <p className="contact-detail">182/D,2nd Crosscut Road,Gandhipuram,Coimbatore </p>
       </div>
 
       <div className="contact-item">
@@ -24,17 +24,17 @@ const Contact = () => {
           <img src={phone} alt="Call Us" />
         </div>
         <h3>CALL US</h3>
-        <p>Bibendum bibendum quis sit amet enim.</p>
-        <p className="contact-detail">+44 (0) 203 116 7711</p>
+        
+        <a href="tel:+919994587405" className='contact-detail'> +91 99945 87405  </a> 
       </div>
 
       <div className="contact-item">
         <div className="icon">
           <img src={mail} alt="Message Us" />
         </div>
-        <h3>MASSAGE US</h3>
-        <p>Donec leo nunc, tincidunt sed consectetur vel.</p>
-        <p className="contact-detail">noreply@noland.com</p>
+        <h3>MAIL US</h3>
+       
+        <a href="mailto:info@saastha.com" className='contact-detail'>digiterdarktech@gmail.com</a>
       </div>
     </div>
     </Fragment>

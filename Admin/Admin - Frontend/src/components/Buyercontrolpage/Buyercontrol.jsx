@@ -116,6 +116,28 @@ const Buyercontrol = () => {
 
               <label>Retailer</label>
               <input type="checkbox" checked={data.role.retailer} readOnly />
+              <label>Business Buy Outs</label>
+              <input type="checkbox" checked={data.role.BusinessBuyOuts} readOnly />
+              <label>Invest Partners</label>
+              <input type="checkbox" checked={data.role.InvestPartners} readOnly />
+              <label>Share Partners</label>
+              <input type="checkbox" checked={data.role.SharePartners} readOnly />
+              <label>Working Partners</label>
+              <input type="checkbox" checked={data.role.WorkingPartners} readOnly />
+              <label>Share Buyers</label>
+              <input type="checkbox" checked={data.role.ShareBuyers} readOnly />
+              <label>Seed Funders </label>
+              <input type="checkbox" checked={data.role.SeedFunders } readOnly />
+              <label>Venture Capitals </label>
+              <input type="checkbox" checked={data.role.VentureCapitals } readOnly />
+
+              
+
+
+
+
+
+
 
 
             <label>Space</label>

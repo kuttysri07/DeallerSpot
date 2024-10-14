@@ -27,7 +27,14 @@ const Form = () => {
     stcokist:false,
     distributor:false,
     agency:false,
-    retailer:false
+    retailer:false,
+    BusinessBuyOuts:false,
+    InvestPartners:false,
+    SharePartners:false,
+    WorkingPartners:false,
+    ShareBuyers:false,
+    SeedFunders:false ,
+    VentureCapitals:false
   });
 
   const[revenue ,setRevenue]= useState('');
@@ -1102,6 +1109,96 @@ const Form = () => {
                 }))
               }
             />
+              <label>Business Buy Outs</label>
+            <input
+              type="checkbox"
+              checked={role.BusinessBuyOuts}
+              onChange={(e) =>
+                setRole((prevRole) => ({
+                  ...prevRole,
+                  BusinessBuyOuts: e.target.checked,
+                }))
+              }
+            />
+
+            <label>Invest Partners</label>
+            <input
+              type="checkbox"
+              checked={role.InvestPartners}
+              onChange={(e) =>
+                setRole((prevRole) => ({
+                  ...prevRole,
+                  InvestPartners: e.target.checked,
+                }))
+              }
+            />
+
+            <label>Share Partners</label>
+            <input
+              type="checkbox"
+              checked={role.SharePartners}
+              onChange={(e) =>
+                setRole((prevRole) => ({
+                  ...prevRole,
+                  SharePartners: e.target.checked,
+                }))
+              }
+            />
+
+            <label>Working Partners</label>
+            <input
+              type="checkbox"
+              checked={role.WorkingPartners}
+              onChange={(e) =>
+                setRole((prevRole) => ({
+                  ...prevRole,
+                  WorkingPartners: e.target.checked,
+                }))
+              }
+            />
+
+            <label>Share Buyers</label>
+            <input
+              type="checkbox"
+              checked={role.ShareBuyers}
+              onChange={(e) =>
+                setRole((prevRole) => ({
+                  ...prevRole,
+                  ShareBuyers: e.target.checked,
+                }))
+              }
+            />
+
+          <label>Seed Funders</label>
+            <input
+              type="checkbox"
+              checked={role.SeedFunders }
+              onChange={(e) =>
+                setRole((prevRole) => ({
+                  ...prevRole,
+                  SeedFunders : e.target.checked,
+                }))
+              }
+            />
+
+            <label>Venture Capitals </label>
+            <input
+              type="checkbox"
+              checked={role.VentureCapitals}
+              onChange={(e) =>
+                setRole((prevRole) => ({
+                  ...prevRole,
+                  VentureCapitals: e.target.checked,
+                }))
+              }
+            />
+
+
+
+
+
+
+
           </div>
 
           <label>Revenue</label>

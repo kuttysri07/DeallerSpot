@@ -52,7 +52,7 @@ const Sellerpage = () => {
 
             
 
-            <h1 className="buyer-title">Sellers</h1>
+            <h1 className="buyer-title">Business Provider</h1>
 
                 <Search />
 
@@ -64,7 +64,7 @@ const Sellerpage = () => {
             <div className="buyer-container">
             {sellerdata.map((data, index) => (
                 <div className="buyer-card" key={index}>
-                    <table className="details-table">
+                    <table className="details-tables">
                     <tbody>
                         <tr>
                             <th>Title</th>
@@ -72,9 +72,15 @@ const Sellerpage = () => {
                         </tr>
                        
                         <tr>
-                            <th>Industry/Category</th>
-                            <td>{data.industry}/{data.category}</td>
+                            <th>Industry</th>
+                            <td>{data.industry}</td>
                         </tr>
+
+                        <tr>
+                            <th>Category</th>
+                            <td>{data.category}</td>
+                        </tr>
+                       
                         <tr>
                         <th>Role Looking for</th>
                               <td>
@@ -88,6 +94,13 @@ const Sellerpage = () => {
                                   if (data.role.distributor) roles.push("Distributor");
                                   if (data.role.agency) roles.push("Agency");
                                   if (data.role.retailer) roles.push("Retailer");
+                                  if (data.role.BusinessSellOuts) roles.push(" Business Sell Outs");
+                                  if (data.role.InvestPartners) roles.push("Invest Partners");
+                                  if (data.role.SharePartners) roles.push("Share Partners");
+                                  if (data.role.WorkingPartners) roles.push("Working Partners");
+                                  if (data.role.ShareSellers) roles.push("Share Sellers");
+                                  if (data.role.SeedFunders ) roles.push("Seed Funders");
+                                  if (data.role.VentureCapitals) roles.push("Venture Capitals");
 
                                   return roles.length > 0 ? roles.join(", ") : "No Roles Selected";
                                 })()}
@@ -131,10 +144,7 @@ const Sellerpage = () => {
                                     <th>Company Name</th>
                                     <td>{data.companyname}</td>
                                 </tr>
-                                <tr>
-                                    <th>Address</th>
-                                    <td>{data.address}</td>
-                                </tr>
+                               
                                 <tr>
                                     <th>Brand Name</th>
                                     <td>{data.brandname}</td>
@@ -164,12 +174,13 @@ const Sellerpage = () => {
                                     <th>Royality</th>
                                     <td>{data.royality}</td>
                                 </tr>
-                               
-                               
                                 <tr>
-                                    <th>Phone</th>
-                                    <td>{data.numberhide ? "You need to pay" : data.phone}</td>
+                                    <th>Address</th>
+                                    <td>{data.address}</td>
                                 </tr>
+                               
+                               
+                              
                             </tbody>
                         </table>
                    

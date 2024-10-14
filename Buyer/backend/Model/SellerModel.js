@@ -20,7 +20,14 @@ const SellerSchema = new mongoose.Schema({
         stockist: { type: Boolean, default: false },
         distributor: { type: Boolean, default: false },
         agency: { type: Boolean, default: false },
-        retailer: { type: Boolean, default: false }
+        retailer: { type: Boolean, default: false },
+        BusinessSellOuts: { type: Boolean, default: false },
+        InvestPartners: { type: Boolean, default: false },
+        SharePartners: { type: Boolean, default: false },
+        WorkingPartners: { type: Boolean, default: false },
+        ShareSellers: { type: Boolean, default: false },
+        SeedFunders : { type: Boolean, default: false },
+        VentureCapitals: { type: Boolean, default: false }
     },
     investmentminimum:String,
     investmentmaximum:String,

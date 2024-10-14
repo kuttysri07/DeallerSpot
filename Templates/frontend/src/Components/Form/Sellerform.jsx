@@ -22,7 +22,19 @@ const Sellerform = () => {
   
   const [role, setRole] = useState({
     dealer: false,
-    franchise: false
+    franchise: false,
+    wholesaler:false,
+    stcokist:false,
+    distributor:false,
+    agency:false,
+    retailer:false,
+    BusinessSellOuts:false,
+    InvestPartners:false,
+    SharePartners:false,
+    WorkingPartners:false,
+    ShareSellers:false,
+    SeedFunders :false,
+    VentureCapitals:false
   });
   const [investmentminimum, setInvestmentMinimum] = useState('');
   const [investmentmaximum, setInvestmentMaximum] = useState('');
@@ -151,7 +163,7 @@ const Sellerform = () => {
         <label className="sellerform-label">Revenue</label>
         <input className="sellerform-input" type="text" value={revenue} onChange={(e) => setRevenue(e.target.value)} />
 
-        <label className="sellerform-label">Royality/ROI Support</label>
+        <label className="sellerform-label">Royality</label>
         <input className="sellerform-input" type="text" value={royality} onChange={(e) => setRoyality(e.target.value)} />
 
         <label className="sellerform-label">Role Looking for</label>
@@ -227,8 +239,8 @@ const Sellerform = () => {
                 }))
               }
             />
-
-          <label>Retailer</label>
+            
+            <label>Retailer</label>
             <input
               type="checkbox"
               checked={role.retailer}
@@ -239,6 +251,92 @@ const Sellerform = () => {
                 }))
               }
             />
+
+          <label>Business Sell Outs</label>
+            <input
+              type="checkbox"
+              checked={role.BusinessSellOuts}
+              onChange={(e) =>
+                setRole((prevRole) => ({
+                  ...prevRole,
+                  BusinessSellOuts: e.target.checked,
+                }))
+              }
+            />
+
+            <label>Invest Partners</label>
+            <input
+              type="checkbox"
+              checked={role.InvestPartners}
+              onChange={(e) =>
+                setRole((prevRole) => ({
+                  ...prevRole,
+                  InvestPartners: e.target.checked,
+                }))
+              }
+            />
+
+          <label>Share Partners</label>
+            <input
+              type="checkbox"
+              checked={role.SharePartners}
+              onChange={(e) =>
+                setRole((prevRole) => ({
+                  ...prevRole,
+                  SharePartners: e.target.checked,
+                }))
+              }
+            />
+
+            <label>Working Partners</label>
+            <input
+              type="checkbox"
+              checked={role.WorkingPartners}
+              onChange={(e) =>
+                setRole((prevRole) => ({
+                  ...prevRole,
+                  WorkingPartners: e.target.checked,
+                }))
+              }
+            />
+
+            <label>Share Sellers</label>
+            <input
+              type="checkbox"
+              checked={role.ShareSellers}
+              onChange={(e) =>
+                setRole((prevRole) => ({
+                  ...prevRole,
+                  ShareSellers: e.target.checked,
+                }))
+              }
+            />
+
+          <label>Seed Funders</label>
+            <input
+              type="checkbox"
+              checked={role.SeedFunders }
+              onChange={(e) =>
+                setRole((prevRole) => ({
+                  ...prevRole,
+                  SeedFunders : e.target.checked,
+                }))
+              }
+            />
+
+          <label>VentureCapitals</label>
+            <input
+              type="checkbox"
+              checked={role.VentureCapitals}
+              onChange={(e) =>
+                setRole((prevRole) => ({
+                  ...prevRole,
+                  VentureCapitals: e.target.checked,
+                }))
+              }
+            />
+
+          
         </div>
 
         <label className="sellerform-label">Investment Minimum</label>

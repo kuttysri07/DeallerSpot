@@ -185,28 +185,28 @@ app.post("/formregister", async (req, res) => {
   }
 });
 
-app.post("/login", async (req, res) => {
-  const { email, password , role } = req.body;
- 
-  try {
-   
+  app.post("/login", async (req, res) => {
+    const { email, password , role } = req.body;
+  
+    try {
     
-    const user = await SignupModel.findOne({ email });  // Find user by email
+      
+      const user = await SignupModel.findOne({ email });  // Find user by email
 
-    if (!user) {
-      return res.status(404).json({ message: "User not found" });  // If no user found
-    }
+      if (!user) {
+        return res.status(404).json({ message: "User not found" });  // If no user found
+      }
 
-    if (user.password === password && user.role === role) {
-      res.status(200).json("Allow");
-    } else {
-      res.status(401).json("Not Allow");
+      if (user.password === password && user.role === role) {
+        res.status(200).json("Allow");
+      } else {
+        res.status(401).json("Not Allow");
+      }
+    } catch (error) {
+      console.error("Login error:", error.message);
+      res.status(500).json({ error: "Internal server error" });
     }
-  } catch (error) {
-    console.error("Login error:", error.message);
-    res.status(500).json({ error: "Internal server error" });
-  }
-});
+  });
 
 
 app.put('/updatedata/:id', (req, res) => {

@@ -44,9 +44,7 @@ nav ul li{
 
 @media screen and (max-width: 800px){
 
-nav h1{
-        padding: 0 100px;
-    }
+
 
     .hamburger{
         display: block;
@@ -57,7 +55,9 @@ nav h1{
     }
     nav  h1{
         font-size: 1.5rem;
-        margin-left: 10px;
+        padding: 0 50px;
+      
+        margin-left: 50px;
     }
 
     nav ul{
