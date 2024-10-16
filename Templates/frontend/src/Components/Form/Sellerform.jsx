@@ -167,177 +167,225 @@ const Sellerform = () => {
         <input className="sellerform-input" type="text" value={royality} onChange={(e) => setRoyality(e.target.value)} />
 
         <label className="sellerform-label">Role Looking for</label>
-        <div className="sellerform-role">
-        <label>Dealer</label>
-            <input
-              type="checkbox"
-              checked={role.dealer}
-              onChange={(e) =>
-                setRole((prevRole) => ({
-                  ...prevRole,
-                  dealer: e.target.checked,
-                }))
-              }
-            />
 
-            <label>Franchise</label>
-            <input
-              type="checkbox"
-              checked={role.franchise}
-              onChange={(e) =>
-                setRole((prevRole) => ({
-                  ...prevRole,
-                  franchise: e.target.checked,
-                }))
-              }
-            />
+        <div className="checkbox-group">
 
-        <label>Wholesaler</label>
-            <input
-              type="checkbox"
-              checked={role.wholesaler}
-              onChange={(e) =>
-                setRole((prevRole) => ({
-                  ...prevRole,
-                  wholesaler: e.target.checked,
-                }))
-              }
-            />
 
-        <label>Stockist</label>
-            <input
-              type="checkbox"
-              checked={role.stockist}
-              onChange={(e) =>
-                setRole((prevRole) => ({
-                  ...prevRole,
-                  stockist: e.target.checked,
-                }))
-              }
-            />
+<label>Role:</label>
+<div className='checkbox-set' >
+<input
+  type="checkbox"
+  checked={role.dealer}
+  onChange={(e) =>
+    setRole((prevRole) => ({
+      ...prevRole,
+      dealer: e.target.checked,
+    }))
+  }
+/>
+  <label>Dealer</label>
+  </div>
 
-          <label>Distributor</label>
-            <input
-              type="checkbox"
-              checked={role.distributor}
-              onChange={(e) =>
-                setRole((prevRole) => ({
-                  ...prevRole,
-                  distributor: e.target.checked,
-                }))
-              }
-            />
 
-          <label>Agency</label>
-            <input
-              type="checkbox"
-              checked={role.agency}
-              onChange={(e) =>
-                setRole((prevRole) => ({
-                  ...prevRole,
-                  agency: e.target.checked,
-                }))
-              }
-            />
-            
-            <label>Retailer</label>
-            <input
-              type="checkbox"
-              checked={role.retailer}
-              onChange={(e) =>
-                setRole((prevRole) => ({
-                  ...prevRole,
-                  retailer: e.target.checked,
-                }))
-              }
-            />
+  <div className='checkbox-set' >
+    <input
+    type="checkbox"
+    checked={role.franchise}
+    onChange={(e) =>
+      setRole((prevRole) => ({
+        ...prevRole,
+        franchise: e.target.checked,
+      }))
+    }
+  />
+  <label>Franchise</label>
+  </div>
 
-          <label>Business Sell Outs</label>
-            <input
-              type="checkbox"
-              checked={role.BusinessSellOuts}
-              onChange={(e) =>
-                setRole((prevRole) => ({
-                  ...prevRole,
-                  BusinessSellOuts: e.target.checked,
-                }))
-              }
-            />
 
-            <label>Invest Partners</label>
-            <input
-              type="checkbox"
-              checked={role.InvestPartners}
-              onChange={(e) =>
-                setRole((prevRole) => ({
-                  ...prevRole,
-                  InvestPartners: e.target.checked,
-                }))
-              }
-            />
+  <div className='checkbox-set' >
+  
+      <input
+      type="checkbox"
+      checked={role.wholesaler}
+      onChange={(e) =>
+        setRole((prevRole) => ({
+          ...prevRole,
+          wholesaler: e.target.checked,
+        }))
+      }
+    />
+      <label>Wholesaler</label>
+  
 
-          <label>Share Partners</label>
-            <input
-              type="checkbox"
-              checked={role.SharePartners}
-              onChange={(e) =>
-                setRole((prevRole) => ({
-                  ...prevRole,
-                  SharePartners: e.target.checked,
-                }))
-              }
-            />
+  </div>
 
-            <label>Working Partners</label>
-            <input
-              type="checkbox"
-              checked={role.WorkingPartners}
-              onChange={(e) =>
-                setRole((prevRole) => ({
-                  ...prevRole,
-                  WorkingPartners: e.target.checked,
-                }))
-              }
-            />
+  
+  <div className='checkbox-set' >
+    <input
+  type="checkbox"
+  checked={role.stockist}
+  onChange={(e) =>
+    setRole((prevRole) => ({
+      ...prevRole,
+      stockist: e.target.checked,
+    }))
+  }
+/>
+ <label>Stockist</label>
+  </div>
 
-            <label>Share Sellers</label>
-            <input
-              type="checkbox"
-              checked={role.ShareSellers}
-              onChange={(e) =>
-                setRole((prevRole) => ({
-                  ...prevRole,
-                  ShareSellers: e.target.checked,
-                }))
-              }
-            />
 
-          <label>Seed Funders</label>
-            <input
-              type="checkbox"
-              checked={role.SeedFunders }
-              onChange={(e) =>
-                setRole((prevRole) => ({
-                  ...prevRole,
-                  SeedFunders : e.target.checked,
-                }))
-              }
-            />
+  <div className='checkbox-set' >
+   <input
+  type="checkbox"
+  checked={role.distributor}
+  onChange={(e) =>
+    setRole((prevRole) => ({
+      ...prevRole,
+      distributor: e.target.checked,
+    }))
+  }
+/>
+ <label>Distributor</label>
+  </div>
 
-          <label>VentureCapitals</label>
-            <input
-              type="checkbox"
-              checked={role.VentureCapitals}
-              onChange={(e) =>
-                setRole((prevRole) => ({
-                  ...prevRole,
-                  VentureCapitals: e.target.checked,
-                }))
-              }
-            />
 
-          
-        </div>
+  <div className='checkbox-set' >
+  <input
+  type="checkbox"
+  checked={role.agency}
+  onChange={(e) =>
+    setRole((prevRole) => ({
+      ...prevRole,
+      agency: e.target.checked,
+    }))
+  }
+/>
+    <label>Agency</label>
+  </div>
+
+  <div className='checkbox-set' >
+  <input
+  type="checkbox"
+  checked={role.retailer}
+  onChange={(e) =>
+    setRole((prevRole) => ({
+      ...prevRole,
+      retailer: e.target.checked,
+    }))
+  }
+/>
+  <label>Retailer</label>
+  </div>
+
+  <div className='checkbox-set' >
+      <input
+      type="checkbox"
+      checked={role.BusinessSellOuts
+      }
+      onChange={(e) =>
+        setRole((prevRole) => ({
+          ...prevRole,
+          BusinessSellOuts: e.target.checked,
+        }))
+      }
+    />
+  <label>Business Sell Outs  </label>
+  </div>
+
+  <div className='checkbox-set' >
+   <input
+  type="checkbox"
+  checked={role.InvestPartners}
+  onChange={(e) =>
+    setRole((prevRole) => ({
+      ...prevRole,
+      InvestPartners: e.target.checked,
+    }))
+  }
+/>
+<label>Invest Partners</label>
+  </div>
+
+  <div className='checkbox-set' >
+   <input
+  type="checkbox"
+  checked={role.SharePartners}
+  onChange={(e) =>
+    setRole((prevRole) => ({
+      ...prevRole,
+      SharePartners: e.target.checked,
+    }))
+  }
+/>
+   <label>Share Partners</label>
+  </div>
+
+  <div className='checkbox-set' >
+         <input
+  type="checkbox"
+  checked={role.WorkingPartners}
+  onChange={(e) =>
+    setRole((prevRole) => ({
+      ...prevRole,
+      WorkingPartners: e.target.checked,
+    }))
+  }
+/>
+ <label>Working Partners</label>
+  </div>
+
+
+  <div className='checkbox-set' >
+  <input
+  type="checkbox"
+  checked={role.ShareSellers}
+  onChange={(e) =>
+    setRole((prevRole) => ({
+      ...prevRole,
+      ShareSellers: e.target.checked,
+    }))
+  }
+/>
+  <label>Share Sellers</label>
+  </div>
+
+
+  <div className='checkbox-set' >
+  
+      <input
+        type="checkbox"
+        checked={role.SeedFunders }
+        onChange={(e) =>
+          setRole((prevRole) => ({
+            ...prevRole,
+            SeedFunders : e.target.checked,
+          }))
+        }
+      />
+        <label>Seed Funders</label>
+
+  </div>
+
+
+
+
+  <div className='checkbox-set' >
+    
+<input
+  type="checkbox"
+  checked={role.VentureCapitals}
+  onChange={(e) =>
+    setRole((prevRole) => ({
+      ...prevRole,
+      VentureCapitals: e.target.checked,
+    }))
+  }
+/>
+<label>Venture Capitals </label>
+  </div>
+
+</div>
 
         <label className="sellerform-label">Investment Minimum</label>
         <input className="sellerform-input" type="number" value={investmentminimum} onChange={(e) => setInvestmentMinimum(e.target.value)} />
