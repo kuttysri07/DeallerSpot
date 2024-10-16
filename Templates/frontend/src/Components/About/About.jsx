@@ -8,22 +8,90 @@ const About = () => {
          <center ><h1 className='heading'>About Us</h1></center> 
         <div className='aboutcontainer'>
         
-        
-        
         <div className='aboutbox'>
             <div className='left'>
                 <img src={image1} alt="" />
             </div>
             <div className='right'>
-                <h1>who we are</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quaerat repudiandae, porro natus nihil
-                     atque. Recusandae incidunt magnam natus nihil, assumenda, corporis itaque pariatur cumque eum, 
-                     optio expedita ipsa vero? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe cupiditate iusto magnam maxime sapiente, eligendi quidem placeat vel quod ducimus nobis doloremque officia dolorem nemo ratione perferendis modi assumenda numquam!
-                     Natus, ducimus quas quibusdam maxime architecto dolor saepe similique blanditiis repudiandae maiores delectus ipsum facilis quisquam libero harum eum iste nihil, nulla laudantium, autem sed. Qui pariatur repudiandae nam impedit.
-                     Nisi nemo, est culpa labore iste facilis laboriosam alias dignissimos!
-                      Alias expedita minima consequuntur ipsam iste eos doloremque non? Fugiat 
-                      laudantium pariatur eaque temporibus voluptatibus earum nisi eveniet perspiciatis nobis
-                     </p>
+                <h1>Who We Are</h1>
+                <p>
+                  Introducing Dealer's Connect: India's 1st Business Matchmaking Consultant Service.
+
+                  Connecting Business Providers and Business Seekers.
+
+                  Imagine a platform where business providers and seekers connect seamlessly, fostering growth and expansion. Dealer's Connect makes this vision a reality.
+
+<br />
+                  <strong>The Concept:</strong>
+
+                  Inspired by successful matchmaking models:
+
+                  - Job consultancy (employer-employee)
+                  - Matrimonial consultancy (bride-groom)
+
+                  Dealer's Connect is a pioneering platform connecting:
+
+                  - Business Providers (expanding businesses)
+                  - Business Seekers (starting new ventures)
+
+<br />
+                  <strong>Who are Business Providers?</strong>
+
+                  Seeking expansion through:
+                  - Dealers
+                  - Distributors
+                  - Franchisees
+                  - Wholesalers
+                  - Stockists
+                  - Agency partnerships
+                  - Business sellouts
+                  - Investment partners
+                  - Shareholders
+<br />
+                  <strong>Who are Business Seekers?</strong>
+
+                  Looking to start new businesses via:
+                  - Franchisors
+                  - Dealers
+                  - Stockists
+                  - Business buyouts
+                  - Good revenue models
+                  - Interested industries/categories
+                  - Interested districts/areas
+                  - Budget-friendly options
+<br />
+                  <strong>Unique Business Concepts:</strong>
+
+                  A one-stop platform for:
+                  - New business opportunities
+                  - Additional income streams
+                  - Part-time businesses
+                  - Home-based businesses
+                  - Business sellouts and buyouts
+                  - Investment partnerships
+                  - Startup funding
+<br />
+                  <strong>Market Demands:</strong>
+
+                  Every business person needs:
+                  - Promotion
+                  - Expansion
+                  - Increased income
+<br />
+                  <strong>Current Challenges:</strong>
+
+                  NO single platform for business providers and seekers, reliable databases, or competitors. No consultancy centers, marketing, or web portals.
+<br />
+                  <strong>Dealer's Connect: Bridging the Gap</strong>
+
+                  - Comprehensive database of business providers and seekers
+                  - Expert consultancy services
+                  - Personalized matchmaking
+                  - Increased business opportunities
+                  - Enhanced revenue growth
+
+                  Join Dealer's Connect today and revolutionize your business!
+                </p>
             </div>
         </div>
         </div>
@@ -31,4 +99,4 @@ const About = () => {
   )
 }
 
-export default About
+export default About;

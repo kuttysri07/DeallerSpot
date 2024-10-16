@@ -16,7 +16,7 @@ const Contact = () => {
         </div>
         <h3>VISIT US</h3>
        
-        <p className="contact-detail">182/D,2nd Crosscut Road,Gandhipuram,Coimbatore </p>
+        <p className="contact-detail">2nd Crosscut Road,Gandhipuram </p>
       </div>
 
       <div className="contact-item">
